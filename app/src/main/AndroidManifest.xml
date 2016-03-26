@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shieh.sherily.weather_s" >
+    package="com.shieh.sherily.weather_s"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -19,6 +25,9 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".activity.WeatherActivity"></activity>
+        <receiver android:name=".receiver.AutoUpdateReceiver"></receiver>
+        <service android:name=".service.AutoUpdateService"></service>
     </application>
 
 </manifest>
