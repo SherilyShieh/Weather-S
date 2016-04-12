@@ -189,7 +189,7 @@ public class ChooseAreaActivity extends Activity {
      * 根据传入的代号和类型从服务器上查询省市县数据。
      */
 
-    private void queryFromServer(final String code, final String type) {
+    private void queryFromServer(final String code, final String    type) {
         String address;
         if (!TextUtils.isEmpty(code)) {
             address = "http://www.weather.com.cn/data/list3/city" + code + ".xml";
